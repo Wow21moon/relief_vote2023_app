@@ -41,3 +41,7 @@
 .worker.disabled {
     background-color: red;
 }
+
+.worker.disabled .worker__photo {
+    opacity: 0.4;
+}

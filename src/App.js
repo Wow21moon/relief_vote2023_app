@@ -1,26 +1,26 @@
 import { useEffect } from 'react'
 import './App.css'
-import Button from './components/Button/Button'
+import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { WorkerList } from './components/WorkerList/WorkerList'
+import { useTelegram } from './hooks/useTelegram'
 
-const tg = window.Telegram.WebApp
+
 
 function App() {
 
+    const {tg} = useTelegram()
 
     useEffect(() => {
         tg.ready()
-    }, [])
+    }, [tg])
 
-    const onClose = () => {
-        tg.close()
-    }
+
 
     return <div className="App">
         <Header />
         <WorkerList />
-        <Button onClick={onClose}>Закрыть</Button>
+        <Footer />
     </div>
 }
 

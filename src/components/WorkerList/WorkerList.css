@@ -1,13 +1,30 @@
 .worker-list__wrapper {
-    
+    background-color: #808080;
+    padding: 40px 30px;
 }
 
 .worker-list__container {
-    background-color: #808080;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
     margin: 0 -30px;
-    padding: 40px 30px;
+}
+
+.worker-list__count-vote {
+    text-align: center;
+    background-color: #FFF;
+    padding: 8px 20px;
+    border-radius: 12px;
+    border: 1px solid black;
+    position: fixed;
+    bottom: 30px;
+    z-index: 200;
+    left: 10%;
+    right: 10%;
+
+}
+
+.worker-list__count-vote.disabled {
+    background-color: red;
 }

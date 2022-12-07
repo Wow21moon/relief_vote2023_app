@@ -1,32 +1,31 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './WorkerItem.css'
 
-export const WorkerItem = ({ worker, changeVote, activeVotes }) => {
+export const WorkerItem = ({ worker, changeVote }) => {
     
+    const [classActive, setClassActive] = useState('')
+    const [classDisabled, setClassDisabled] = useState('')
 
-    useEffect(() => {
-        const activeClass = activeVotes.find(item => item.id === worker.id)
+    // useEffect(() => {
+    //     const activeClass = activeVotes.find(item => item.id === worker.id)
 
-        console.log('activeClass', activeClass)
+    //     if(activeClass) {
+    //         setClassActive('active')
+    //     } else {
+    //         setClassActive('')
+    //     }
 
-        if(activeClass) {
-            setClassActive('active')
-        } else {
-            setClassActive('')
-        }
+    // }, [activeVotes, worker])
 
-    }, [activeVotes, worker])
-
-    const [classActive, setClassActive] = useState(true)
 
     const onAddHandler = () => {
-        changeVote(worker, setClassActive)
+        changeVote(worker, setClassActive, setClassDisabled)
     }
 
 
 
     return (
-        <div className={'worker ' + classActive} onClick={onAddHandler}>
+        <div className={'worker ' + classActive + classDisabled} onClick={onAddHandler}>
             <img
                 src="images/check.svg"
                 alt="check"
