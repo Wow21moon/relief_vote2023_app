@@ -4,7 +4,7 @@
     padding: 20px;
     text-align: center;
     border: 1px solid #000;
-    max-width: 40%;
+    max-width: 15%;
     border-radius: 22px;
     position: relative;
     cursor: pointer;
@@ -48,4 +48,16 @@
 
 .worker.disabled .worker__photo {
     opacity: 0.4;
+}
+
+@media (max-width: 1200px) {
+    .worker {
+        max-width: 28%;
+    }
+}
+
+@media (max-width: 600px) {
+    .worker {
+        max-width: 40%;
+    }
 }
