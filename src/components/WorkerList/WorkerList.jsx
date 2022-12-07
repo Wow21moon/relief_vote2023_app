@@ -42,12 +42,12 @@ export const WorkerList = () => {
         setActiveVotes(newItems)
 
         if(newItems.length === 3) {
-            tg.MainButton.hide()
-        } else {
             tg.MainButton.show()
             tg.MainButton.setParams({
                 text: 'Проголосовать'
             })
+        } else {
+            tg.MainButton.hide()
         }
 
     }

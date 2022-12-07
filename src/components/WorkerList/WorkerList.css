@@ -1,6 +1,6 @@
 .worker-list__wrapper {
-    background-color: #808080;
     padding: 40px 30px;
+    padding-bottom: 80px;
 }
 
 .worker-list__container {
@@ -27,5 +27,5 @@
 }
 
 .worker-list__count-vote.disabled {
-    background-color: red;
+    background-color: #FF4040;
 }
