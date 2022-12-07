@@ -1,11 +1,12 @@
 import { useEffect } from 'react'
 import './App.css'
+import Button from './components/Button/Button'
 
 const tg = window.Telegram.WebApp
 
 function App() {
 
-    
+
     useEffect(() => {
         tg.ready()
     }, [])
@@ -15,8 +16,7 @@ function App() {
     }
 
     return <div className="App">
-
-        <button onClick={onClose}>Закрыть</button>
+        <Button onClick={onClose}>Закрыть</Button>
     </div>
 }
 
