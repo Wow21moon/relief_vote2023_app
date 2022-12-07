@@ -1,0 +1,19 @@
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    justify-content: center;
+}
+
+.header__title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.header__subheader {
+    font-size: 16px;
+    
+}
