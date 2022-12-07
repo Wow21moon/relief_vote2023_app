@@ -4,4 +4,10 @@
 
 .worker-list__container {
     background-color: #808080;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 -30px;
+    padding: 40px 30px;
 }
