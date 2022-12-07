@@ -41,7 +41,7 @@ export const WorkerList = () => {
 
         setActiveVotes(newItems)
 
-        if(activeVotes.length === 3) {
+        if(newItems.length === 3) {
             tg.MainButton.hide()
         } else {
             tg.MainButton.show()
