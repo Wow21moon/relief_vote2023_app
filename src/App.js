@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import './App.css'
-import { Footer } from './components/Footer/Footer'
+// import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { WorkerList } from './components/WorkerList/WorkerList'
 import { useTelegram } from './hooks/useTelegram'
